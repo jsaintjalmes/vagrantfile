@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 	# sync current with shared folder in vm
 	config.vm.synced_folder ".", "/Shared", create: true
 
-	# ssh agent forwarding
+	# ssh agent config
   config.ssh.forward_agent = true	
 
 end
