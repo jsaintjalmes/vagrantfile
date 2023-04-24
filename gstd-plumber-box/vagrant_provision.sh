@@ -1,6 +1,6 @@
 ## gstd pipeline practice box ##
 
-## BASICS ##
+## BASIC CONFIG ##
 
 # update
 apt-get update
@@ -11,13 +11,8 @@ sudo apt-get install -y \
 	vim \
 	git \
 	meson \
+	tmux \
 	make
-
-# set user jsaintjalmes
-#useradd -m -s /bin/bash -U jsaintjalmes
-#cp -pr /home/vagrant/.ssh /home/jsaintjalmes
-#chown -R jsaintjalmes:jsaintjalmes /home/jsaintjalmes
-#echo "%jsaintjalmes ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/jsaintjalmes
 
 # git ssh forwarding
 #ssh-keyscan -H github.com >> ~/.ssh/known_hosts
