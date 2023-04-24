@@ -49,6 +49,11 @@ sudo ./configure
 sudo make
 
 # install binaries
-# build environment
-#meson build
-#ninja -C build
+sudo make install
+
+# build
+sudo meson build
+sudo ninja -C build
+
+# install binaries
+sudo ninja -C build install
