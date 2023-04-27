@@ -10,4 +10,4 @@ the box is configured with a shared folder with the host, in the current directo
 ## documentation
 
 * [gstreamer daemon overview and quick start guide](https://developer.ridgerun.com/wiki/index.php/GStreamer_Daemon)
-* [gst-plugin-devialet source code and quich start](https://github.com/devialet/gst-plugins-devialet)
+* [gst-plugin-devialet source code and quick start](https://github.com/devialet/gst-plugins-devialet)
