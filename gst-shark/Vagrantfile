@@ -1,0 +1,21 @@
+Vagrant.configure("2") do |config|
+
+	# os
+	config.vm.box = "debian/bullseye64"
+
+	# config RAM and CPU
+	config.vm.provider "virtualbox" do |v|
+		v.memory = 4096
+		v.cpus = 4
+	end
+
+	# link provision
+	config.vm.provision :shell, path: "vagrant_provision.sh"
+
+	# sync current with shared folder in vm
+	config.vm.synced_folder ".", "/Shared", create: true
+
+	# ssh agent config
+  config.ssh.forward_agent = true	
+
+end
