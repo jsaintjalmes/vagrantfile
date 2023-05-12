@@ -29,10 +29,11 @@ cd gstreamer
 git checkout 1.20.5
 
 # gst-plugins-devialet
-git -C subprojects clone git@github.com:devialet/gst-plugins-devialet.git
-meson setup --wipe builddir -Dcustom_subprojects=gst-plugins-devialet -Dgstreamer:tools=enabled --prefix=/tmp/gst
-meson compile -C builddir
-meson install -C builddir
+# permissions required
+#git -C subprojects clone git@github.com:devialet/gst-plugins-devialet.git
+#meson setup --wipe builddir -Dcustom_subprojects=gst-plugins-devialet -Dgstreamer:tools=enabled --prefix=/tmp/gst
+#meson compile -C builddir
+#meson install -C builddir
 
 ## GST DAEMON INSTALL ##
 
